@@ -46,7 +46,7 @@ function run_util_script() {
   curl --silent "${artifacts_location}/${script_path}${artifacts_location_sas_token}" | sudo bash -s -- "$@"
   local return_value=$?
   if [ $return_value -ne 0 ]; then
-    >&2 echo "Failed while executing script '$script_path'."
+    >&2 echo "Failed while executing script '$script_path' with parameters '$@'."
     exit $return_value
   fi
 }
