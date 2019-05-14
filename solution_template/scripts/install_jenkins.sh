@@ -364,7 +364,7 @@ imds_cred=$(cat <<EOF
   <scope>GLOBAL</scope>
   <id>azure_service_principal</id>
   <description>Local Managed Identities for Azure Resources</description>
-</com.microsoft.azure.util.AzureImdsCredentials)
+</com.microsoft.azure.util.AzureImdsCredentials>
 EOF
 )
 sp_cred=$(cat <<EOF
